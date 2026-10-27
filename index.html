@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abasto | Conexión & Suministro B2B</title>
+  <meta name="description" content="Plataforma B2B para pedidos automatizados, control de abastecimiento y gestión centralizada entre restaurantes y distribuidores en El Salvador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Notification -->
+  <div class="top-banner">
+    <div class="container banner-inner">
+      <span class="badge-pill">Plataforma Web</span>
+      <span>Conecta tu restaurante con distribuidores verificados de San Salvador y La Libertad</span>
+      <a href="#probar-app" class="banner-link">Ver &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Navbar Glassmorphism -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-link">
+        <div class="brand-logo">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+            <path d="M8 32 L20 8 L32 32" stroke="#26A69A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 24 C16 17, 24 28, 30 18" stroke="#1C4E77" stroke-width="3.8" stroke-linecap="round"/>
+            <path d="M26 14 L30 18 L26 22" fill="#1C4E77"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">ABASTO</span>
+          <span class="brand-subtitle">Plataforma B2B</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#interactivo" class="nav-link">Vista Previa</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#equipo" class="nav-link">Equipo</a>
+        <div class="nav-cta-group">
+          <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-nav">
+            Ingresar
+          </a>
+          <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-nav">
+            <span>Abrir App</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="pulse-indicator"></span>
+            Directorio y Gestión B2B en Tiempo Real
+          </div>
+          
+          <h1 class="hero-title reveal">
+            La plataforma para pedir, gestionar y <span class="gradient-text">analizar tus compras de restaurante</span>
+          </h1>
+          
+          <p class="hero-description reveal">
+            Un marketplace directo para restaurantes independientes y distribuidores. Explora catálogos por rubro, califica con estrellas, comunícate por chat interno y controla cada dólar en tu panel de analítica.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#interactivo" class="btn btn-teal btn-lg glow-effect">
+              <span>Explorar Funciones</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-navy btn-lg">
+              <span>Ingresar a la Plataforma</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+
+          <!-- Micro Métricas Reales -->
+          <div class="hero-kpis reveal">
+            <div class="kpi-card-visual">
+              <div class="kpi-icon-box">⭐</div>
+              <div>
+                <span class="kpi-val">5.0</span>
+                <span class="kpi-label">Reseñas mutuas</span>
+              </div>
+            </div>
+            <div class="kpi-card-visual">
+              <div class="kpi-icon-box">💬</div>
+              <div>
+                <span class="kpi-val">Chat</span>
+                <span class="kpi-label">Mensajes directos</span>
+              </div>
+            </div>
+            <div class="kpi-card-visual">
+              <div class="kpi-icon-box">📊</div>
+              <div>
+                <span class="kpi-val">100%</span>
+                <span class="kpi-label">Control de gastos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Interactivo del Gateway -->
+        <div class="hero-interactive reveal" id="probar-app">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">abasto-flame.vercel.app</div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="app-brand-center">
+                <div class="logo-symbol-lg">
+                  <svg viewBox="0 0 40 40" width="48" height="48" fill="none">
+                    <path d="M8 32 L20 8 L32 32" stroke="#26A69A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 24 C16 17, 24 28, 30 18" stroke="#1C4E77" stroke-width="3.8" stroke-linecap="round"/>
+                    <path d="M26 14 L30 18 L26 22" fill="#1C4E77"/>
+                  </svg>
+                </div>
+                <h3>ABASTO</h3>
+                <p class="tagline">Conexión & Suministro B2B</p>
+                <div class="gateway-prompt">Plataforma B2B de Abastecimiento</div>
+                <p class="gateway-subprompt">Selecciona tu tipo de perfil para continuar:</p>
+              </div>
+
+              <!-- Selector Reactivo de Roles -->
+              <div class="profile-switch-container">
+                <button type="button" class="profile-tab active" data-role="restaurante" id="tabRestaurante">
+                  <span class="check-icon">✓</span>
+                  <span>Restaurante</span>
+                </button>
+                <button type="button" class="profile-tab" data-role="distribuidor" id="tabDistribuidor">
+                  <span class="truck-icon">🚚</span>
+                  <span>Distribuidor</span>
+                </button>
+              </div>
+
+              <!-- Vista Dinámica del Perfil Seleccionado -->
+              <div class="role-preview-card" id="rolePreviewCard">
+                <div class="role-feature-item">
+                  <div class="rf-icon" id="rfIcon">🏪</div>
+                  <div class="rf-text">
+                    <strong id="roleTitle">Perfil: Restaurante</strong>
+                    <p id="roleDescription">Explora proveedores por rubro, califica su servicio, chatea directo y analiza tus gastos mensuales.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-navy btn-block btn-launch" id="btnLaunchTarget">
+                <span>Continuar a la App</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+
+              <div class="terminal-footer">
+                <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="admin-link">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                  <span>Acceso Administrativo Abasto</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulo Visual Interactivo: Dos Lados de la App -->
+    <section class="section bg-light" id="interactivo">
+      <div class="container">
+        <div class="section-badge-center">Arquitectura del Sistema</div>
+        <h2 class="section-title-center">Diseñada a la medida de tu operación</h2>
+        <p class="section-subtitle-center">
+          Una interfaz pensada específicamente para lo que necesita el restaurante al abastecerse y el distribuidor al vender.
+        </p>
+
+        <!-- Selector Tabs de la Plataforma -->
+        <div class="app-showcase-tabs">
+          <button class="showcase-tab active" data-showcase="restaurante">
+            <span class="tab-icon">🍽️</span> Vista del Restaurante
+          </button>
+          <button class="showcase-tab" data-showcase="distribuidor">
+            <span class="tab-icon">📦</span> Vista del Distribuidor
+          </button>
+        </div>
+
+        <!-- Panel 1: Restaurante -->
+        <div class="showcase-view active" id="viewRestaurante">
+          <div class="features-columns-grid">
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">Catálogo Multirubro</span>
+                <h4>Directorio de Proveedores Verificados</h4>
+                <p>Encuentra insumos clasificados con filtros rápidos y calificaciones visibles.</p>
+              </div>
+              <div class="mock-filter-row">
+                <span class="m-pill active">Todos</span>
+                <span class="m-pill">Verduras</span>
+                <span class="m-pill">Lácteos</span>
+                <span class="m-pill">Carnes</span>
+                <span class="m-pill">Abarrotes</span>
+                <span class="m-pill">Desechables</span>
+              </div>
+              <div class="mock-distributor-item">
+                <div class="dist-avatar">🏬</div>
+                <div class="dist-meta">
+                  <strong>Distribuidora</strong>
+                  <span>Desechables y Empaques &bull; Rutas matutinas</span>
+                </div>
+                <div class="dist-rating">
+                  <span class="star">★</span> 5.0 (0)
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">Gestión de Órdenes</span>
+                <h4>Seguimiento, Chat & Calificaciones</h4>
+                <p>Comunícate por mensaje interno por cada pedido sin salir de la plataforma.</p>
+              </div>
+              <div class="mock-order-box">
+                <div class="order-top">
+                  <span class="order-id">ORD-2026-807</span>
+                  <span class="order-status-badge">Confirmado</span>
+                </div>
+                <div class="order-content-preview">
+                  <p>2 x Bandeja de plástico ($14.90)</p>
+                  <p>2 x Platos desechables ($11.22)</p>
+                  <strong>Total: $26.12</strong>
+                </div>
+                <div class="order-actions-bar">
+                  <span class="btn-micro-chat">💬 Chat Directo</span>
+                  <span class="btn-micro-rate">★ Calificar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">Mis Gastos</span>
+                <h4>Control y Analítica Financiera</h4>
+                <p>Visualiza en qué se va el presupuesto de tu restaurante por insumo y por proveedor.</p>
+              </div>
+              <div class="mock-stats-mini-grid">
+                <div class="m-stat-box">
+                  <span class="label">Gasto Total</span>
+                  <span class="val">$108.16</span>
+                </div>
+                <div class="m-stat-box">
+                  <span class="label">Pedidos Hechos</span>
+                  <span class="val">7</span>
+                </div>
+                <div class="m-stat-box">
+                  <span class="label">Ticket Promedio</span>
+                  <span class="val">$15.45</span>
+                </div>
+              </div>
+              <div class="mock-bars-wrapper">
+                <div class="bar-row">
+                  <span>Bandeja de plástico</span>
+                  <strong>$74.50</strong>
+                </div>
+                <div class="mock-bar-fill"><div class="fill" style="width: 75%;"></div></div>
+                <div class="bar-row">
+                  <span>Platos desechables</span>
+                  <strong>$33.66</strong>
+                </div>
+                <div class="mock-bar-fill"><div class="fill" style="width: 35%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Distribuidor -->
+        <div class="showcase-view" id="viewDistribuidor">
+          <div class="features-columns-grid">
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">Despacho</span>
+                <h4>Lista Ordenada de Pedidos</h4>
+                <p>Monitorea pedidos entrantes, montos netos a recibir y cambia el estado con un clic.</p>
+              </div>
+              <div class="mock-dist-dispatch-box">
+                <div class="dispatch-header">
+                  <span class="badge-status-pend">Pendiente</span>
+                  <span class="order-code">ORD-2026-238</span>
+                </div>
+                <div class="dispatch-body">
+                  <strong>Restaurante Solicitante</strong>
+                  <p>1 x Bandeja de plástico &bull; $7.45</p>
+                  <div class="dispatch-net">Tu pago neto a recibir: <strong>$7.08</strong></div>
+                </div>
+                <div class="order-actions-bar">
+                  <span class="btn-micro-chat">💬 Chat</span>
+                  <span class="btn-micro-status">Estado: En Ruta &darr;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">Mi Catálogo</span>
+                <h4>Gestión Rápida de Insumos</h4>
+                <p>Publica productos con imagen, categoría y edita precios en segundos.</p>
+              </div>
+              <div class="mock-catalog-list">
+                <div class="catalog-row">
+                  <div class="cat-img">📦</div>
+                  <div class="cat-info">
+                    <strong>Bandeja de plástico (50 uds)</strong>
+                    <span>Desechables y Empaques</span>
+                  </div>
+                  <div class="cat-price">$7.30 ✏️</div>
+                </div>
+                <div class="catalog-row">
+                  <div class="cat-img">🍽️</div>
+                  <div class="cat-info">
+                    <strong>Platos desechables (50 uds)</strong>
+                    <span>Desechables y Empaques</span>
+                  </div>
+                  <div class="cat-price">$5.50 ✏️</div>
+                </div>
+                <div class="btn-add-item-mock">+ Agregar Insumo</div>
+              </div>
+            </div>
+
+            <div class="feature-mock-card">
+              <div class="f-header">
+                <span class="f-pill">CRM & Reseñas</span>
+                <h4>Rendimiento Comercial & Clientes</h4>
+                <p>Visualiza tus clientes principales, facturación acumulada y reputación.</p>
+              </div>
+              <div class="mock-stats-mini-grid">
+                <div class="m-stat-box">
+                  <span class="label">Facturación</span>
+                  <span class="val">$82.04</span>
+                </div>
+                <div class="m-stat-box">
+                  <span class="label">Despachos</span>
+                  <span class="val">4</span>
+                </div>
+                <div class="m-stat-box">
+                  <span class="label">Ticket Prom.</span>
+                  <span class="val">$20.51</span>
+                </div>
+              </div>
+              <div class="mock-review-container">
+                <div class="review-label">⭐ Reseñas Recibidas</div>
+                <p class="review-status">Construye reputación con cada entrega confirmada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumen de Ventajas Comparativas -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section-badge-center">Beneficios Clave</div>
+        <h2 class="section-title-center">La diferencia de operar con Abasto</h2>
+        <p class="section-subtitle-center">
+          Olvídate de la información dispersa y los canales informales. Abasto centraliza la comunicación y la gestión en un solo lugar.
+        </p>
+
+        <div class="visual-comparison-grid">
+          <div class="vis-card bad-side">
+            <div class="vis-card-header">
+              <span class="vis-badge bad">✕ Modo Tradicional</span>
+              <h3>El desorden de libretas y mensajes dispersos</h3>
+            </div>
+            
+            <div class="vis-items-list">
+              <div class="vis-item">
+                <div class="vis-item-icon bad">💬</div>
+                <div class="vis-item-content">
+                  <strong>Conversaciones desorganizadas</strong>
+                  <p>Mensajes sueltos en canales personales que se confunden y se traspapelan sin comprobante.</p>
+                </div>
+              </div>
+
+              <div class="vis-item">
+                <div class="vis-item-icon bad">❓</div>
+                <div class="vis-item-content">
+                  <strong>Sin calificaciones ni reputación</strong>
+                  <p>Es imposible saber qué distribuidores cumplen y tienen buena valoración de otros locales.</p>
+                </div>
+              </div>
+
+              <div class="vis-item">
+                <div class="vis-item-icon bad">📑</div>
+                <div class="vis-item-content">
+                  <strong>Precios y compras a ciegas</strong>
+                  <p>El dueño o cocinero no sabe cuánto gastó en el mes ni qué insumo representa su mayor costo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vis-card good-side">
+            <div class="vis-card-header">
+              <span class="vis-badge good">✓ Con Abasto</span>
+              <h3>Plataforma centralizada y con datos claros</h3>
+            </div>
+
+            <div class="vis-items-list">
+              <div class="vis-item">
+                <div class="vis-item-icon good">💬</div>
+                <div class="vis-item-content">
+                  <strong>Chat directo por cada pedido</strong>
+                  <p>Mensajería integrada dentro de la app para coordinar detalles puntuales de cada orden de compra.</p>
+                </div>
+              </div>
+
+              <div class="vis-item">
+                <div class="vis-item-icon good">⭐</div>
+                <div class="vis-item-content">
+                  <strong>Calificaciones mutuas con estrellas</strong>
+                  <p>Tanto el restaurante como el distribuidor pueden calificarse con feedback transparente.</p>
+                </div>
+              </div>
+
+              <div class="vis-item">
+                <div class="vis-item-icon good">📈</div>
+                <div class="vis-item-content">
+                  <strong>CRM y Analítica de Gastos en vivo</strong>
+                  <p>Gráficos instantáneos de compras, ticket promedio y desglose de insumos más pedidos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo Fundador -->
+    <section class="section bg-light" id="equipo">
+      <div class="container">
+        <div class="section-badge-center">Equipo & Liderazgo</div>
+        <h2 class="section-title-center">Equipo Fundador</h2>
+        <p class="section-subtitle-center">
+          Desarrollando tecnología accesible para los negocios gastronómicos de El Salvador.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card-visual">
+            <div class="avatar-badge">EM</div>
+            <h4>Kathleen Argueta</h4>
+            <span class="team-role">Chief Executive Officer</span>
+            <p>Estrategia global, alianzas institucionales y vinculación de proveedores clave.</p>
+          </div>
+
+          <div class="team-card-visual">
+            <div class="avatar-badge">KA</div>
+            <h4>Esmeralda Mejía</h4>
+            <span class="team-role">Chief Technology Officer</span>
+            <p>Arquitectura de software, seguridad de datos y desarrollo de la plataforma web.</p>
+          </div>
+
+          <div class="team-card-visual">
+            <div class="avatar-badge">ND</div>
+            <h4>Napoleón Díaz-Nuila</h4>
+            <span class="team-role">Chief Product Officer</span>
+            <p>Diseño de interfaz y experiencia de usuario para restaurantes y distribuidores.</p>
+          </div>
+
+          <div class="team-card-visual">
+            <div class="avatar-badge">AD</div>
+            <h4>Alejandro Durón</h4>
+            <span class="team-role">Chief Financial Officer</span>
+            <p>Planificación financiera, modelo de sostenibilidad y métricas operativas.</p>
+          </div>
+
+          <div class="team-card-visual">
+            <div class="avatar-badge">MM</div>
+            <h4>Marco Mazzini</h4>
+            <span class="team-role">Chief Operating Officer</span>
+            <p>Incorporación de comercios, validación de catálogos y soporte a clientes.</p>
+          </div>
+
+          <div class="team-card-visual">
+            <div class="avatar-badge">RS</div>
+            <h4>Reina Sosa</h4>
+            <span class="team-role">Chief Information Officer</span>
+            <p>Estructuración de datos, categorías de insumos y reportes analíticos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section cta-final">
+      <div class="container">
+        <div class="cta-banner-glass">
+          <div class="cta-inner">
+            <div class="cta-icon-floating">🚀</div>
+            <h2>Comienza a abastecer tu restaurante con orden y claridad</h2>
+            <p>
+              Prueba la aplicación web desplegada en Vercel. Regístrate como restaurante o publica tu catálogo como distribuidor.
+            </p>
+            <div class="cta-buttons">
+              <a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-teal btn-lg">
+                <span>Ingresar a abasto-flame.vercel.app</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="cta-meta">
+              <span>✓ Catálogo multirubro</span>
+              <span>✓ Chat integrado por pedido</span>
+              <span>✓ Analítica y calificaciones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="brand-link footer-brand">
+          <div class="brand-logo sm">
+            <span>A</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title" style="color:#FFFFFF">ABASTO</span>
+            <span class="brand-subtitle" style="color:#94A3B8">Plataforma B2B</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Plataforma web para pedidos directos, catálogos digitales, chat interno y analítica de compras para restaurantes y distribuidores en El Salvador.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Plataforma Web</h5>
+        <ul class="footer-links-list">
+          <li><a href="https://abasto-flame.vercel.app/" target="_blank" rel="noopener noreferrer">App en Producción</a></li>
+          <li><a href="#probar-app">Acceso Restaurantes</a></li>
+          <li><a href="#probar-app">Acceso Distribuidores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Módulos</h5>
+        <ul class="footer-links-list">
+          <li><a href="#interactivo">Directorio & Filtros</a></li>
+          <li><a href="#interactivo">Chat & Pedidos</a></li>
+          <li><a href="#interactivo">CRM & Analítica</a></li>
+          <li><a href="#equipo">Equipo Fundador</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <p class="contact-line">San Salvador y La Libertad, El Salvador</p>
+        <p class="contact-line">Soporte directo dentro de la plataforma</p>
+        
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-row">
+        <p>&copy; 2026 Abasto. Todos los derechos reservados.</p>
+        <p class="legal-note">Plataforma B2B de Abastecimiento Gastronómico</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
